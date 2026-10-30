@@ -17,7 +17,7 @@ BIZ = {
     "coach": "Coach Isaac Neilson",
     "phone": "385-505-8374",
     "phone_href": "+13855058374",
-    "email": "",  # add once the domain email exists, e.g. coach@simplifiedhoops.com
+    "email": "coach@simplifiedhoops.com",
     "city": "Dallas, Texas",
     "instagram": "", "tiktok": "", "facebook": "", "youtube": "",
 }
@@ -173,7 +173,7 @@ def build():
     schema = {
         "@context": "https://schema.org", "@type": "SportsActivityLocation",
         "name": BIZ["name"], "url": SITE, "telephone": BIZ["phone"],
-        "areaServed": "Dallas, TX", "priceRange": "$$",
+        "email": BIZ["email"], "areaServed": "Dallas, TX", "priceRange": "$$",
         "description": "Private and small-group basketball training for youth and high school players: fundamentals, footwork, shooting, ball handling, post play, post defense and basketball IQ.",
         "founder": {"@type": "Person", "name": "Isaac Neilson"},
         "address": {"@type": "PostalAddress", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US"},
