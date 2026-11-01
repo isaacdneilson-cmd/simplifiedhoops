@@ -174,14 +174,14 @@ def build():
         "@context": "https://schema.org", "@type": "SportsActivityLocation",
         "name": BIZ["name"], "url": SITE, "telephone": BIZ["phone"],
         "email": BIZ["email"], "areaServed": "Dallas, TX", "priceRange": "$$",
-        "description": "Private and small-group basketball training for youth and high school players: fundamentals, footwork, shooting, ball handling, post play, post defense and basketball IQ.",
+        "description": "Private and small-group basketball training for youth and high school players: fundamentals, footwork, shooting, ball handling, defense, post play, post defense and basketball IQ.",
         "founder": {"@type": "Person", "name": "Isaac Neilson"},
         "address": {"@type": "PostalAddress", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US"},
     }
     ld = f'<script type="application/ld+json">{json.dumps(schema)}</script>'
 
     page("index.html", "Basketball Training in Dallas for Youth & High School | Simplified Hoops",
-         "Private basketball training in Dallas with former D1 post player Coach Isaac Neilson. Fundamentals, footwork, shooting, post play and basketball IQ for youth and high school players.",
+         "Private basketball training in Dallas with former D1 post player Coach Isaac Neilson. Fundamentals, footwork, shooting, defense, post play and basketball IQ, built step by step for youth and high school players.",
          parts["home.html"].replace("{latest}", latest), extra=ld)
     page("training.html", "Basketball Training Programs & Prices in Dallas | Simplified Hoops",
          "Private sessions $100/hour, 5- and 10-session packages, small-group training and a free player strategy call. Youth and high school basketball training in Dallas.",

@@ -111,7 +111,7 @@ section{padding:88px 0}
 .audience p{color:var(--ink-soft)}
 
 /* Skills list: each skill with a one-line "why" */
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule)}
 .skill{padding:26px 24px 26px 0;border-bottom:1px solid var(--rule)}
 .skill h3{margin-bottom:.3em}
 .skill p{margin:0;color:var(--ink-soft);font-size:1rem}
@@ -119,6 +119,19 @@ section{padding:88px 0}
 .spec{background:var(--white);color:var(--ink);border-radius:var(--r-lg);padding:28px}
 .spec h3{color:var(--lane-deep)}
 .spec p{color:var(--ink-soft);margin:0}
+
+/* Staircase: how every skill is built (a real sequence) */
+.stairs{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:end;counter-reset:stair}
+.stairs li{counter-increment:stair;background:var(--lane);color:var(--white);border-radius:var(--r-lg) var(--r-lg) 0 0;padding:24px 22px;display:flex;flex-direction:column;justify-content:flex-end}
+.stairs li::before{content:counter(stair);font-weight:900;font-variation-settings:"wdth" 125;font-size:2.4rem;line-height:1;color:var(--ball);margin-bottom:auto;padding-bottom:16px}
+.stairs li:nth-child(1){min-height:230px;background:#3B66E0}
+.stairs li:nth-child(2){min-height:290px}
+.stairs li:nth-child(3){min-height:350px;background:var(--lane-deep)}
+.stairs li:nth-child(4){min-height:410px;background:var(--ink)}
+.stairs h3{color:var(--white)}
+.stairs p{margin:0;color:#DCE5FF;font-size:1rem}
+.stairs-example{margin:0;color:var(--ink-soft);max-width:var(--read)}
+.stairs-example strong{color:var(--ink)}
 
 /* Steps (a real sequence) */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;counter-reset:step}
@@ -220,7 +233,8 @@ section{padding:88px 0}
   .hero-photo{margin:0 auto;aspect-ratio:4/3}
   .specialty-wrap{grid-template-columns:1fr}
   .headshot{max-width:260px}
-  .skills,.steps,.prices,.posts{grid-template-columns:1fr 1fr}
+  .skills,.steps,.prices,.posts,.stairs{grid-template-columns:1fr 1fr}
+  .stairs li{min-height:0!important;border-radius:var(--r-lg)}
   .site-footer .wrap{grid-template-columns:1fr 1fr}
 }
 @media (max-width:720px){
@@ -229,7 +243,7 @@ section{padding:88px 0}
   .nav-toggle{display:block}
   section{padding:64px 0}
   .hero .wrap{padding-top:44px;padding-bottom:48px;gap:32px}
-  .skills,.specialty,.steps,.prices,.posts,.site-footer .wrap{grid-template-columns:1fr}
+  .skills,.specialty,.steps,.prices,.posts,.stairs,.site-footer .wrap{grid-template-columns:1fr}
   .skill{padding-right:0}
   .extra{flex-direction:column;align-items:flex-start}
 }
