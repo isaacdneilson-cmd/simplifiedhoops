@@ -8,12 +8,12 @@ then marks it done.
 - 
 
 ## Done
+- Catching the ball in the post through contact (2026-11-03)
 - The drop step (2026-10-29)
 - Post defense before the catch (2026-10-22)
 - Basketball IQ habits (2026-10-15)
 
 ## Backup topics (used when "Up next" is empty)
-- How to catch the ball in the post through contact
 - Footwork basics: jump stop vs. one-two stop
 - Why young players should learn to use both hands around the rim
 - Boxing out: the first rebound habit
