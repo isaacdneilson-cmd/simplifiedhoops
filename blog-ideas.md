@@ -8,6 +8,7 @@ then marks it done.
 - 
 
 ## Done
+- Using both hands around the rim (2026-11-17)
 - Footwork basics: jump stop vs. one-two stop (2026-11-13)
 - Catching the ball in the post through contact (2026-11-03)
 - The drop step (2026-10-29)
@@ -15,7 +16,6 @@ then marks it done.
 - Basketball IQ habits (2026-10-15)
 
 ## Backup topics (used when "Up next" is empty)
-- Why young players should learn to use both hands around the rim
 - Boxing out: the first rebound habit
 - Setting a good screen, and when to roll, pop or slip
 - What to work on in the off-season by age group
